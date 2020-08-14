@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<title>Портал COVID-19</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+	<div id="header">
+  		<h1 id="head">COVID-XIX<h1>
+	    <p class="descript">Нож в печень, никто не вечен.</p>
+	</div>
+
+	<body>
+
+	<div>
+		<h1>Что такое?<h1>
+	    <p id="txt">COVID-19 (аббревиатура от англ. COronaVIrus Disease 2019), ранее коронавирусная инфекция 2019-nCoV — потенциально тяжёлая острая респираторная инфекция, вызываемая коронавирусом SARS-CoV-2 (2019-nCoV). Представляет собой опасное заболевание, которое может протекать как в форме острой респираторной вирусной инфекции лёгкого течения, так и в тяжёлой форме, специфические осложнения которой могут включать вирусную пневмонию, влекущую за собой острый респираторный дистресс-синдром или дыхательную недостаточность с риском смерти. К наиболее распространённым симптомам заболевания относятся повышенная температура тела, утомляемость и сухой кашель. В редких случаях поражение вирусом детей и подростков, предположительно, может приводить к развитию воспалительного синдрома.
+		<br><ol id="wiki"><a href="https://ru.wikipedia.org/wiki/COVID-19">Взято из википедии</a></ol></p>
+	</div>
+	<p id="sep"></p>
+	<p><img src="unnamed.jpg"></p>
+	<p id="sep"></p>
+	<p></p>
+	<H1> Статистика: </H1>
+	<iframe src="https://yandex.ru/covid19/stat/widget/default/?geoId=11119" width=500 height=570 frameborder="1"></iframe>
+	<p id="sep"></p>
+	<p></p>
+	<H1 id = 'a1'> Онлайн тест: </H1>
+
+	<form>
+		<p class="alert alert-secondary">Возраст<input class="form-control" id="age" type="text"><br></p>
+		<p class="alert alert-secondary">Температура<input placeholder="36.6" class="form-control" id="temp" type="text"><br></p>
+		<p class="alert alert-secondary">
+	    	<label for="exampleFormControlSelect2">Болит горло?</label>
+	    	<select multiple class="form-control" id="throat">
+		      	<option>Нет</option>
+		      	<option>Першит</option>
+		      	<option>Раздирает</option>
+	    	</select>
+	  	</p>
+	  	<p class="alert alert-secondary">
+	    	<label for="exampleFormControlSelect2">Кашель</label>
+	    	<select multiple class="form-control" id="cough">
+	    		<option>Нет</option>
+	    		<option>Влажный</option>
+		      	<option>Сухой</option>
+	    	</select>
+	  	</p>
+	  	<label class="checkbox">
+		  <input id="saveAge" type="checkbox" value="">
+		   Сохранить возраст
+		</label>
+		<br>
+		<input type="button" class="btn btn-success" value="Отправить" onclick="addition();">
+		<input type="button" class="btn btn-dark" value="Пройти снова" onclick="ref();">
+		<p id="error"></p>
+		<p id="result"><br><br><br></p>
+	</form>
+	</body>
+	<script src="code.js"></script>
+</html>
